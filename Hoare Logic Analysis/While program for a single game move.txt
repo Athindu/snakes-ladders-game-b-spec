@@ -1,0 +1,26 @@
+[roll>0 & roll<7]
+[position=1]
+
+Snakes = {31|->4, 16|->13, 47|->25, 63|->60, 66|->52, 97|->75};
+Ladders = {3|->39, 10|->12, 27|->53, 56|->84, 72|->90, 61|->99};
+
+WHILE position<100 DO
+	
+	IF position + roll > 100
+	THEN
+		skip			//Avoid position value from exceeding 100
+
+	ELSIF (position+ roll :  dom(Snakes)) 
+	THEN
+		position := Snakes(position+ roll)
+
+	ELSIF (position+ roll :  dom(Ladders))
+	THEN
+		position := Ladders(position+ roll)
+
+	ELSE
+		position := position + roll
+	END
+
+END	
+[position=100]
