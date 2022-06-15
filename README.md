@@ -10,9 +10,22 @@ Furthermore, typical features of snakes and ladders game like going down when fa
 * Atelier B
 * Pro B
 
+## Configurations
+
+ProB tool configurations
+
+```
+Preferences -> Configurations -> MININT..MAXINT (32bit)
+```
+
+```
+Preferences -> Animation preferences -> MAX_OPERATIONS  (Set MAX_OPERATIONS > 50)
+```
+
 ## Author
 Athindu Umayanga : [@Athindu](https://github.com/Athindu)
 
 
 ###
+<br/>
 The project was developed to complete the coursework in Reasoning about Programs module at University of Westminster.
